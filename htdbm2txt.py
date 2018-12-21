@@ -29,7 +29,7 @@ if os.path.exists(outputPath):
 
 shutil.copy(inputPath, inputPathTemp)
 
-# This actually open inputPathTemp because the extension appended automatically
+# This actually opens inputPathTemp because the extension is appended automatically
 db = dbm.open(inputPath, 'r')
 
 keys = db.keys()

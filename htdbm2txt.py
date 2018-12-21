@@ -19,11 +19,11 @@ if not os.path.isfile(inputPath):
     sys.exit(1)
 
 if os.path.exists(inputPathTemp):
-    print(inputPathTemp + ' already exists. Delete it and try again.')
+    print(inputPathTemp + ' already exists. Delete it and try again.', file=sys.stderr)
     sys.exit(1)
 
 if os.path.exists(outputPath):
-    print(outputPath + ' already exists. Delete it and try again.')
+    print(outputPath + ' already exists. Delete it and try again.', file=sys.stderr)
     sys.exit(1)
 
 
